@@ -9,13 +9,13 @@ import exceptions.tiException;
 
 class Person_ManagerTest {
 	private Person_Manager personManager = new Person_Manager();
-	public void setupScenary1() {
-		
-	}	
-	
+
+	public void setupScenary(){
+
+	}
 	@Test
 	void testRegister() {
-		setupScenary1();
+		setupScenary();
 		int idType=2;
 		String idNumber="1007560744";
 		personManager.setDay(13);
@@ -24,7 +24,7 @@ class Person_ManagerTest {
 	
 	@Test
 	void testTICondition() {
-		setupScenary1();
+		setupScenary();
 		int idType=1;
 		String idNumber="1007560744";
 		assertThrows(tiException.class, () -> {
@@ -34,7 +34,7 @@ class Person_ManagerTest {
 	
 	@Test
 	void testDayCondition() {
-		setupScenary1();
+		setupScenary();
 		int idType=2;
 		String idNumber="1007560744";
 		personManager.setDay(14);

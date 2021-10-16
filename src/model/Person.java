@@ -1,8 +1,8 @@
 package model;
 
 public class Person {
-	String idNumber;
-	Type idType;
+	private String idNumber;
+	private Type idType;
 	
 	public Person (Type idType, String idNumber) {
 		this.idNumber=idNumber;

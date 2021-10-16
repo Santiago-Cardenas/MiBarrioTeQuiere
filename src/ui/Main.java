@@ -12,6 +12,7 @@ import exceptions.tiException;
 	private Scanner sc;
 	private Person_Manager person_manager;
 	private boolean exit;
+
     public Main() {
         sc = new Scanner(System.in);
 		person_manager=new Person_Manager();
