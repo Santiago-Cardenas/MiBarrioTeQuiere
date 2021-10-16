@@ -23,24 +23,24 @@ public class Person_Manager {
     	String msg="";
     	switch(idType) {
 
-    	case 1:
-    		newPerson = new Person(Type.TI,idNumber);
-    		break;
+			case 1:
+				newPerson = new Person(Type.TI,idNumber);
+				break;
 
-    	case 2:
-    		newPerson = new Person(Type.CC,idNumber);
-    		break;
+			case 2:
+				newPerson = new Person(Type.CC,idNumber);
+				break;
 
-    	case 3:
-    		newPerson = new Person(Type.PP,idNumber);
-    		break;
+			case 3:
+				newPerson = new Person(Type.PP,idNumber);
+				break;
 
-    	case 4:
-    		newPerson = new Person(Type.CE,idNumber);
-    		break;
+			case 4:
+				newPerson = new Person(Type.CE,idNumber);
+				break;
 
-    	default:
-    		throw new noIdTypeException();
+			default:
+				throw new noIdTypeException();
     		
     	}
 		if(idNumber.length()<2){
